@@ -35,3 +35,10 @@ app.get("/video", (req, res) => {
 app.listen(3000, () => {
     console.log("Rodando na porta 3000");
 });
+app.get("/", (req, res) => {
+    res.send(`
+        <h1>🎬 Auto Video AI</h1>
+        <p>Servidor funcionando ✔</p>
+        <p>Use /upload para enviar vídeos</p>
+    `);
+});
